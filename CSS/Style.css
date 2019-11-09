@@ -1,0 +1,390 @@
+/*
+        START ----- GLOBAL DESIGN
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.content {
+    width: 90%;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+}
+
+i {
+    font-size: 40px;
+}
+
+.tablet-view {
+    display: none;
+}
+
+.display-table {
+    display: table;
+}
+
+.display-table-cell {
+    display: table-cell;
+}
+
+button {
+    background: transparent;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 5px solid #fff;
+    color: #fff;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    padding: 20px 0px 10px;
+    justify-content: space-evenly;
+}
+
+/*
+        END -----   GLOBAL DESIGN
+*/
+
+/*
+        START ----- HEADER
+*/
+header {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+}
+
+#company-logo h1 {
+    font-size: 38px;
+}
+
+#company-logo h1, i {
+    color: #fff;
+}
+
+#company-logo .content {
+    justify-content: space-between;
+}
+
+#company-logo .tablet-view {
+    width: 17.5%;
+}
+
+#company-logo ul {
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .tablet-view {
+        display: block;
+    }
+
+    #company-banner i {
+        color: #fff;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #company-logo .tablet-view {
+        width: 15%;
+    }
+}
+
+/*
+        END -----   HEADER
+*/
+
+/*
+        START ----- COMPANY-BANNER
+*/
+#company-banner {
+    background-image: url(../Photos/Piping.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 95vh;
+}
+
+.color-filter {
+    background: rgba(0, 0, 0, 0.5);
+    height: 95vh;
+}
+
+#company-banner .positioning {
+    padding-top: 100px;
+}
+
+.company-moto h3 {
+    padding: 10px 0px;
+    color: #fff;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    #company-banner {
+        height: 95vh;
+        background-position-y: -400px;
+    }
+
+    .company-moto {
+        background: none;
+        width: 60%;
+        float: right;
+    }
+
+    .company-moto h3 {
+        text-align: right;
+
+        font-size: 50px;
+        line-height: 60px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .company-moto {
+        width: 50%;
+    }
+
+    .company-moto h3 {
+        font-size: 75px;
+        line-height: 95px;
+    }
+}
+
+/*
+        END -----   COMPANY-BANNER
+*/
+
+/*
+        START   -----   SERVICE-HEADER
+*/
+#service-header {
+    height: 100px;
+    align-items: center;
+}
+
+#service-header h3 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    #service-header h3 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #service-header h3 {
+        font-size: 32px;
+    }
+}
+
+/*
+        END   -----   SERVICE-HEADER
+*/
+
+/*
+        START   -----   INSPECTION
+*/
+#inspection {
+    background-image: url(../Photos/Plumbing\ Inspection.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -450px;
+    height: 95vh;
+}
+
+.description-container {
+    padding-top: 100px;
+}
+
+.description {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+}
+
+.description h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.description p {
+    text-align: justify;
+    text-indent: 10mm;
+    line-height: 24px;
+}
+
+.description h2, p {
+    color: #fff;
+}
+
+.contact-information {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    visibility: hidden;
+    height: 0px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+.contact-information .contact-number {
+    padding-bottom: 20px;
+}
+
+.contact-information ul li {
+    color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+    #inspection {
+        background-position-x: -150px;
+    }
+
+    .description-container {
+        width: 300px;
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #inspection {
+        background-position: center;
+    }
+
+    .description-container {
+        width: 450px;
+    }
+
+    .description-container h2 {
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+
+    .description-container article p {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .contact-information {
+        width: 300px;
+        margin: 0px auto;
+    }
+}
+
+/*
+        END   -----   INSPECTION
+*/
+
+/*
+        START   -----   DIVISOR
+*/
+.divisor {
+    overflow: hidden;
+}
+
+.divisor p {
+    text-align: justify;
+    text-indent: 10mm;
+    line-height: 24px;
+    padding-top: 10px;
+}
+
+.divisor i {
+    padding-bottom: 10px;
+}
+
+.divisor p, i {
+    color: #111;
+}
+
+.divisor .social-media {
+    width: 40%;
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+.divisor .social-media .flex {
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 768px) {
+    .divisor .social-media {
+        width: 20%;
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .divisor .social-media {
+        width: 15%;
+    }
+}
+
+/*
+        END   -----   DIVISOR
+*/
+
+/*
+        START   -----   MAINTENANCE
+*/
+#maintenance {
+    background-image: url(../Photos/Plumbing\ Maintenance.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -100px;
+    height: 95vh;
+}
+
+@media only screen and (min-width: 768px) {
+    #maintenance .positioning {
+        float: right;
+        padding-right: 50px;
+    }
+}
+
+/*
+        END   -----   MAINTENANCE
+*/
+
+/*
+        END   -----   MAINTENANCE
+*/
+#repair {
+    background-image: url(../Photos/Plumbing\ Repair.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: -470px;
+    height: 95vh;
+}
+
+@media only screen and (min-width: 768px) {
+    #repair {
+        background-position-x: center;
+    }
+}
+
+/*
+        END   -----   MAINTENANCE
+*/
